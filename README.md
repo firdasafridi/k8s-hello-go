@@ -19,9 +19,9 @@ gcloud container clusters create helloworld-gke \
    --num-nodes 1 \
    --enable-basic-auth \
    --issue-client-certificate \
-   --zone your-gcp-zone
+   --zone asia-southeast1
 
-   get nodes
+   #get nodes
    kubectl get nodes
 ```
 
@@ -48,7 +48,7 @@ kubectl get pods
 for delete 
 ```
 # Delete the container
-gcloud container clusters delete k8s-hello-go-gke
+gcloud container clusters delete k8s-hello-go-gke --zone asia-southeast1
 # Delete the images
 gcloud container images delete gcr.io/testing-saja-262603/k8s-hello-go-gke
 ```

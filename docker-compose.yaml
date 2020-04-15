@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+    web:
+        build: .
+        ports:
+            - "8080:8080"
+  ### Sonarqube ################################################
+#   golang:
+#     image: golang:latest
+#     container_name: coba
+#     ports:
+#       - "8080:8080"
